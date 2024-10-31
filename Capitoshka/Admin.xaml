@@ -1,0 +1,23 @@
+﻿<Window x:Class="Capitoshka.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Capitoshka"
+        mc:Ignorable="d"
+        Title="Окно администратора" Height="450" Width="800">
+    <Grid Background="Cornsilk">
+        <Canvas Margin="0,0,0,3" Grid.RowSpan="2">
+            <Rectangle Canvas.Left="276" Canvas.Top="21" Width="248" Height="50" RadiusX="10" RadiusY="10" Fill="#FF76E1E3" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label Canvas.Top="19" Canvas.Left="282" Content="Администратор" FontFamily="Comic Sans MS" FontSize="30" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        </Canvas>
+
+        <Canvas Margin="0,0,0,3">
+            
+            <Button x:Name="FormDocuments" Content="Формирование документов" Canvas.Left="222" Canvas.Top="266" Height="40" Width="356" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="18" FontWeight="Bold" Foreground="Black" Background="#FF76E1E3" Click="FormDocuments_Click"/>
+            <Button x:Name="WorkngWithUsers" Content="Управление сотрудниками" Canvas.Left="222" Canvas.Top="176" Height="40" Width="356" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="18" FontWeight="Bold" Foreground="Black" Background="#FF76E1E3" Click="WorkngWithUsers_Click"/>
+            <Button x:Name="WorkingWithEvents" Content="Управление мероприятиями" Canvas.Left="222" Canvas.Top="221" Height="40" Width="356" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="18" FontWeight="Bold" Foreground="Black" Background="#FF76E1E3" Click="WorkingWithEvents_Click"/>
+            <Button x:Name="BtnExit" Content="Выход" Canvas.Top="371" Canvas.Left="690" Width="100" Height="50" FontFamily="Comic Sans MS" FontSize="18" FontWeight="Bold" Foreground="Black" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BtnExit_Click"/>
+        </Canvas>
+    </Grid>
+</Window>
